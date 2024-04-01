@@ -11,8 +11,8 @@ export default function Home() {
   const sendNotification = () => {
     console.log("Sending Notification");
     if ("Notification" in window && Notification.permission === "granted") {
-      new Notification("This is a notification", {
-        body: "This is the body of the notification",
+      new Notification("A notification has come", {
+        body: "This is the description of the notification",
       });
     }
   };
